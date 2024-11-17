@@ -2,6 +2,8 @@ import './content.css'
 import createJoin from './join/join';
 import createDiscover from './discover/discover';
 import createSign from './signin/sign';
+import joinIMG from '../../assets/images/background-page-landing.png'
+import signIMG from '../../assets/images/background-page-sign-up.png'
 const join = createJoin();
 const discover = createDiscover();
 const sign = createSign();
@@ -19,10 +21,10 @@ export const createContent = (discovera, joina, signupa) => {
       htmlElement.style.backgroundImage = "none";
     } else if (clickedLink === "join") {
       content.appendChild(join);
-      htmlElement.style.backgroundImage = "url('../../assets/images/background-page-landing.png')";
+      htmlElement.style.backgroundImage = `url(${joinIMG})`;
     } else if (clickedLink === "sign") {
       content.appendChild(sign);
-      htmlElement.style.backgroundImage = "url('../../assets/images/background-page-sign-up.png')";
+      htmlElement.style.backgroundImage = `url(${signIMG})`;
    
     }
     

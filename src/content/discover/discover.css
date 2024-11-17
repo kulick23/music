@@ -8,16 +8,16 @@
   text-align: center;
   line-height: 0;
   gap: 50px;
-align-items: center;
+  align-items: center;
 }
 .discover__button{
-display: flex;
-gap: 50px;
+  display: flex;
+  gap: 30px;
 }
 .discover__img{
   position: absolute;
   top: 30%;
   height: 300px;
-right: 100px;
+  right: 100px;
 
 }

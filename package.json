@@ -1,11 +1,11 @@
 {
-  "name": "hometask-music",
+  "name": "simo",
   "version": "1.0.0",
-  "description": "Hometask for EHU EPAM Introduction to WebDev Course",
   "main": "index.js",
   "scripts": {
     "dev": "vite",
     "build": "vite build --base=./",
+    "deploy": "vite build && gh-pages -d dist",
     "serve": "vite --host=localhost --port=8080 ./ ",
     "preview": "vite preview",
     "lint": "eslint -c .eslintrc src/*.js",
@@ -13,19 +13,10 @@
     "prettier": "prettier --check . --ignore-unknown --ignore-path ../../config/.prettierignore",
     "prettier:fix": "prettier --write . --ignore-unknown --ignore-path ../../config/.prettierignore"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://gitlab.com/epam-ehu/intro-to-web-dev-tasks.git"
-  },
-  "author": "Aliaksandr Krasnou <aliaksandr_krasnou@epam.com>",
   "license": "ISC",
   "devDependencies": {
-    "eslint-config-esdu": "*",
-    "ts-config-esdu": "*",
-    "vite": "^4.3.9"
-  },
-  "bugs": {
-    "url": "https://gitlab.com/epam-ehu/intro-to-web-dev-tasks/issues"
-  },
-  "homepage": "https://gitlab.com/epam-ehu/intro-to-web-dev-tasks#readme"
+    "gh-pages": "^6.2.0",
+    "vite": "^4.3.9",
+    "vite-plugin-gh-pages": "^1.0.0"
+  }
 }
